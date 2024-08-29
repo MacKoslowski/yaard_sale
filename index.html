@@ -63,18 +63,31 @@
         border-color: #e1306c;
       }
 
-      h3 {
-        color: white;
-        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-        padding: 20px;
-        border-radius: 0;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to the text */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow to the header box */
+      .tree {
+        height: 3em;
+        width: 2em;
+      }
+      .inline-container {
+        text-align: center; /* Centers the content horizontally */
+      }
+
+      .inline-container img,
+      .inline-container h3 {
+        display: inline-block;
+        vertical-align: middle; /* Aligns elements to the middle */
+      }
+
+      .inline-container h3 {
+        margin: 0 15px; /* Space between the images and the header */
       }
     </style>
   </head>
   <body>
-    <h3>Yaard Sale</h3>
+    <div class="inline-container">
+      <img src="./tree.webp" alt="A swagged out tree" class="tree" />
+      <h3>Yaard Sale</h3>
+      <img src="./tree.webp" alt="A swagged out tree" class="tree" />
+    </div>
     <div>musicbyyardsale@gmail.com</div>
     <a
       href="https://www.instagram.com/yaard.sale/"
